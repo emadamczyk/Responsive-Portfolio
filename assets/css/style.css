@@ -178,19 +178,18 @@ input[type=submit]:hover  {
 }
 
 .gallery-images {
-  position: relative;
+  /*position: relative;*/
   width: 900px;
   margin: 0 auto 40px;
   background: #fff;
   /* border: solid pink 1px; */ /*to test border of the bounding box */
 }
 
-.gallery {
-  width: 300px;
-  height: 200px; 
-}
+/*.gallery {
+  width: 100%;
+}*/
 
-.gallery-head h3 a {
+.work-head h3 a {
   background-color: #4aaaa5;
   color: #fff;
   line-height: 50px;
@@ -213,9 +212,28 @@ figure {
   display: block;
   margin: 0;
 }
+.work-samples {
+  position: relative;
+  max-width: 275px;
+}
 
+.work-samples:nth-child(even) {
+  margin-right: 40px;
+}
 
-#box-1 {
+.work-samples img {
+  width: 100%;
+}
+
+.work-head h3 {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  border: 0 none;
+  z-index: 2;
+}
+
+/*#box-1 {
   position: absolute;
   top: 0;
   left: 0;
@@ -278,7 +296,7 @@ figure {
   top: 625px;
   left: 0;
   z-index: 2;
-}
+}*/
 
 @media (min-width: 769px) and (max-width: 980px) {
   .head-wrapper {
@@ -309,7 +327,7 @@ figure {
     float: left;
   }
 
-  .gallery #box-1 {
+  /*.gallery #box-1 {
     width: 250px;
     height: auto;
   }
@@ -336,7 +354,7 @@ figure {
   .gallery-head #gallery-1 {
     width: 250px;
     height: auto;
-  }
+  }*/
 
   footer p {
     margin-top: 10px;
