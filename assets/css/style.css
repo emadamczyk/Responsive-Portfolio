@@ -397,6 +397,7 @@
     .header-links {
       float: left; /* how to align links center? */
       padding: 20px 0;
+      width: 100%;
       color: #777;
       font-family: Arial, Helvetica, sans-serif;
     }
@@ -404,10 +405,11 @@
     .head-wrapper {
       max-width: 100%;
       padding: 0 20px;
+      text-align: center;
     }
   
     /* The wrapper's width will be 600px */
-  
+    
     .main-wrapper {
       max-width: 100%;
     }
@@ -415,23 +417,34 @@
       width: 100%;
       height: auto;
     }
-   /* portfolio
+   /* portfolio*/
     .gallery {
       width: 100%;
     }
   
   
-    #box-1
-    #box-2 
-    #box-3
-    #box-4
+    #box-1,
+    #box-2, 
+    #box-3,
+    #box-4,
     #box-5 {
       width: 100%;
-      display: inline-block;
+      display: block;
       margin-bottom: 10px;
+      position: static;
+    }
+
+    #gallery-1,
+    #gallery-2,
+    #gallery-3,
+    #gallery-4,
+    #gallery-5 {
+      width: 100%;
+      position: relative;
+      bottom: 20px;
     }
   
-    #box-2 {
+    /*#box-2 {
       position: relative;
       left: 0;
     } 
@@ -443,8 +456,8 @@
   
     .auth-image {
       float: left;
-    }
-    */
+    }*/
+    
   
     footer p {
       margin-top: 20px;
